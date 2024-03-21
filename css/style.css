@@ -134,7 +134,7 @@ header {
   left: 0;
   width: 100%;
   z-index: 200;
-  background-color: var(--white-color);
+  
   transition: all 0.3s ease-in-out;
 }
 
@@ -152,18 +152,26 @@ header {
   display: flex;
   
   align-items: center;
-  padding: 8px 0;
+ 
   transition: all 0.3s ease-in-out;
 }
 .nav-header li a {
-  color: var(--main-color);
+  color: #fff;
   font-size: 16px;
   text-transform: capitalize;
   transition: all 0.3s ease-in-out;
 }
-
+.slider-cover{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,0) 42%, rgba(224,14,238,0.5187324929971988) 100%);
+}
 .nav-header li a:hover {
-  color: var(--main-hover);
+  color: #fff;
 }
 .nav-header li {
   margin: 0 15px;
@@ -362,13 +370,11 @@ html[dir="ltr"] .cats-dispaly .cat-li a{
 }
 
 .fixed-nav {
-  background-color: #fff;
+  background-color: #e00eee;
   margin-top: -150px;
   transition: all 0.3s ease-in-out;
 }
-.fixed-nav .nav-header {
-  padding: 10px 0;
-}
+
 .fixed-header {
   position: fixed;
   top: 0;
@@ -417,6 +423,7 @@ html[dir="ltr"] .cats-dispaly .cat-li a{
 .main-slider {
   position: relative;
   overflow: hidden;
+  margin-top: -120px;
 }
 .main,
 .swiper-cont {
